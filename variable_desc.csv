@@ -1,0 +1,18 @@
+Variable	Variable Category	Description	Variable Type
+Age	Client Data 	Clients age at time of call 	Continuous 
+job 	Client Data 	Clients type of job - admin, bluecollar, entrepreneur,housemaid ,management, retired, selfemployed, services,student,technician,unemploye, unknown 	Categorical 
+marital 	Client Data 	Clients Marital Status at time of call -  'divorced','married','single','unknown'; note: 'divorced' means divorced or widowed 	Categorical 
+education 	Client Data 	Clients educational background at time of call - 'primary' , 'secondary', 'tertiary', 'unknown' 	Categorical 
+default 	Client Data 	Does client have credit in default? -  'no','yes','unknown' 	Categorical 
+housing 	Client Data 	Does client have a house loan?  - 'no','yes','unknown' 	Categorical 
+loan 	Client Data 	Does client have a personal loan? - 'no','yes','unknown' 	Categorical 
+contact 	Last Contact Info 	Communication type with client – 'cellular','telephone' 	Categorical 
+month 	Last Contact Info 	Last contact month of year with client - 'jan', 'feb', 'mar', ..., 'nov', 'dec' 	Categorical 
+day_of_week 	Last Contact Info 	Last contact day of week with client - 'mon','tue','wed','thu','fri' 	Categorical 
+duration 	Last Contact Info 	Last contact duration, in seconds to Client.  Important note: this attribute highly affects the output target (e.g., if duration=0 then y='no'). Yet, the duration is not known before a call is performed. Also, after the end of the call y is obviously known. Thus, this input should only be included for benchmark purposes and should be discarded if the intention is to have a realistic predictive model. 	Continuous 
+campaign 	Other 	Number of contacts performed during this campaign for this client (includes last contact) 	Continuous 
+pdays 	Other 	Number of days that passed by after the client was last contacted from a previous campaign (numeric; 999 means clients was not previously contacted) 	Continuous 
+previous 	Other 	Number of contacts performed before this campaign and for this client 	Continuous 
+poutcome 	Other 	Outcome of the previous marketing campaign - 'failure', 'nonexistent', 'success' 	Categorical 
+balance	Client data	Balance of the individual	Continuous 
+y 	Target/Response 	Has the client subscribed a term deposit? - 'yes','no' 	Categorical/ Binary 
